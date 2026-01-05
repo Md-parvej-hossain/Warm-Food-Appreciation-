@@ -1,0 +1,13 @@
+.footer-title {
+  @apply text-white font-semibold mb-4;
+}
+
+.footer-links li {
+  @apply mb-2 hover:text-yellow-400 transition;
+}
+
+.footer-icon {
+  @apply w-9 h-9 flex items-center justify-center rounded-full
+         bg-white/10 hover:bg-yellow-400 hover:text-black
+         transition;
+}
