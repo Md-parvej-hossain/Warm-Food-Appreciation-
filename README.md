@@ -1,8 +1,15 @@
 # Warm Food 🍲  
 A Full-Stack Food Ordering Web Application
 
+<p align="center">
+  <img src="images/banner.png" alt="Warm Food Banner" width="800"/>
+</p>
+
+---
+
 ## 📖 Introduction
-**Warm Food** is a full-stack web application designed to provide users with a seamless food browsing and ordering experience. The platform includes secure user authentication, protected routes using JWT, and a responsive frontend built with React. The backend is powered by Node.js, Express.js, and MongoDB to ensure scalability and performance.
+**Warm Food** is a full-stack food ordering web application that provides users with a smooth and secure experience for browsing restaurants, ordering food, and tracking orders.  
+It features role-based dashboards (Admin, Rider, User), secure authentication using Firebase and JWT, and a scalable backend built with Node.js and MongoDB.
 
 🔗 **Live Website:**  
 https://auth-itegration-6dfcc.web.app
@@ -13,14 +20,13 @@ https://auth-itegration-6dfcc.web.app
 - Introduction
 - Features
 - Tech Stack
+- Project Structure
 - Installation
 - Environment Variables
 - Usage
 - Authentication & Security
 - API Overview
-- Folder Structure
 - Dependencies
-- Troubleshooting
 - Future Improvements
 - Contributors
 - License
@@ -28,14 +34,17 @@ https://auth-itegration-6dfcc.web.app
 ---
 
 ## ✨ Features
-- User authentication (Login / Register)
-- JWT-based secure authorization
+- User authentication (Login & Register)
+- Role-based access (Admin, Rider, User)
+- JWT-based authorization
 - Protected routes
+- Food browsing & ordering
+- Payment integration
+- Order tracking
+- Admin analytics dashboard
 - Responsive UI
-- MongoDB database integration
 - RESTful API
-- Secure password handling
-- Firebase hosting (Frontend)
+- Firebase hosting
 
 ---
 
@@ -43,24 +52,75 @@ https://auth-itegration-6dfcc.web.app
 
 ### Frontend
 - React
+- React Router
+- Firebase Authentication
 - Firebase Hosting
-- CSS / Tailwind (if applicable)
+- Tailwind CSS
+- DaisyUI
+- TanStack Query
+- Axios
 
 ### Backend
 - Node.js
 - Express.js
 - MongoDB
 - JWT (JSON Web Token)
+- MVC Architecture
 
-### Authentication
+### Authentication & Security
 - Firebase Authentication
 - JWT token verification
+- Role-based route protection
 
 ---
 
-## ⚙️ Installation
+## 📂 Project Structure
 
-### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/warm-food.git
-cd warm-food
+warm-food/
+├── server/
+│   ├── app.js
+│   ├── server.js
+│   ├── config/
+│   │   └── db.js
+│   ├── controllers/
+│   │   ├── auth.controller.js
+│   │   ├── users.controller.js
+│   │   ├── foods.controller.js
+│   │   └── payment.controller.js
+│   ├── routes/
+│   │   ├── auth.routes.js
+│   │   ├── users.routes.js
+│   │   ├── foods.routes.js
+│   │   └── payment.routes.js
+│   ├── middlewares/
+│   │   ├── verifyToken.js
+│   │   ├── verifyAdmin.js
+│   │   └── verifyRider.js
+│   ├── models/
+│   │   └── dbCollectionModel.js
+│   ├── views/
+│   │   └── index.html
+│   ├── vercel.json
+│   ├── package.json
+│   └── .gitignore
+│
+├── client/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── hooks/
+│   │   ├── routes/
+│   │   ├── layouts/
+│   │   ├── providers/
+│   │   ├── firebase/
+│   │   ├── utils/
+│   │   └── main.jsx
+│   ├── public/
+│   ├── firebase.json
+│   ├── vite.config.js
+│   ├── package.json
+│   └── .gitignore
+│
+└── README.md
