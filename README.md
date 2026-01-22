@@ -2,7 +2,11 @@
 A Full-Stack Food Ordering Web Application
 
 <p align="center">
-  <img src=[images/banner.png](https://github.com/Md-parvej-hossain/Warm-Food-Appreciation-/blob/17bae51755aee7fd443078f4e26a9ee3acae6fd6/woarm%20Food.png) alt="Warm Food Banner" width="800"/>
+  <img 
+    src="https://github.com/Md-parvej-hossain/Warm-Food-Appreciation-/blob/main/woarm%20Food.png?raw=true" 
+    alt="Warm Food Banner" 
+    width="800"
+  />
 </p>
 
 ---
