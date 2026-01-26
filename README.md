@@ -1,5 +1,9 @@
-# Warm Food 🍲  
-A Full-Stack Food Ordering Web Application
+# A Full-Stack Food Ordering Web Application
+# ❤️  Warm Food 🍲 
+
+## 📌 Overview  
+**Warm Food** is a full-stack food ordering web application that provides users with a smooth and secure experience for browsing restaurants, ordering food, and tracking orders.  
+It features role-based dashboards (Admin, Rider, User), secure authentication using Firebase and JWT, and a scalable backend built with Node.js and MongoDB.
 
 <p align="center">
   <img 
